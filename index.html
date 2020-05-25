@@ -20,13 +20,50 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+.navlink{
+	font-size: 16px;
+	color: white;
+}
 </style>
 </head>
 <body>
-<!-- Just an image -->
-<nav class="navbar bg-primary"></nav>
-<div class="container">
-<br><br>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "Nasdaq 100"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR/USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "BTC/USD"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "ETH/USD"
+    }
+  ],
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "largeChartUrl": "https://www.tradingview.com/gopro/?share_your_love=GeloA",
+  "displayMode": "compact",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+<div class="container"><br>
   <div class="row">
     <div class="col-9">
 		<div class="jumbotron">
@@ -36,6 +73,13 @@ body {
 	  	<p>The exchange rates and currency reserves are updated every 5 seconds for all exchangers in the list.</p>
 	  	<a class="btn btn-primary btn-lg" href="https://www.bestchange.com/?p=1112042" role="button">Learn more</a>
 		</div>
+	    	
+	    	<nav class="nav justify-content-center">
+		<a class="navlink" href="https://www.bestchange.com/bitcoin-to-ethereum.html?p=1112042">| Convert Bitcoin (BTC) to Ethereum (ETH)</a>
+		<a class="navlink" href="https://www.bestchange.com/partner/?p=1112042">| Affiliate program</a>
+	  	<a class="navlink" href="https://www.bestchange.com/?p=1112042">| E-currency exchangers listing</a>
+		<a class="navlink" href="https://www.bestchange.com/list.html?p=1112042">| E-currency exchangers |</a>
+		</nav>	
 	</div>
 
 	<div class="col-3">
