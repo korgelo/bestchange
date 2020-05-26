@@ -32,6 +32,28 @@ body {
   color: white;
   text-shadow: 3px 3px 6px black;
 }
+.button {
+  background-color: #1c87c9;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif; 
+  font-size: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  }
+  @keyframes glowing {
+  0% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+  50% { background-color: #49e819; box-shadow: 0 0 20px #49e819; }
+  100% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+  }
+  .button {
+  animation: glowing 1300ms infinite;
+  }
 
 </style>
 </head>
@@ -81,10 +103,11 @@ body {
     <div class="col-9">
 		<div class="jumbotron jmbtrnbckimage" >
 	  	<h1 class="display-4"><a href="https://www.bestchange.com/" onclick="this.href='https://www.bestchange.com/?p=1112042'">BestChange!</a></h1>
-	  	<div class="lead jmbfont"><a href="https://www.bestchange.com/" onclick="this.href='https://www.bestchange.com/?p=1112042'">BestChange.com</a> monitors automatic electronic currency exchangers. The service permanently monitors the largest and most reliable exchangers for you to always know at what exchanger you can exchange one electronic currency for another at the best rate.</div>
+	  	<div class="lead jmbfont">Monitors automatic electronic currency exchangers. The service permanently monitors the largest and most reliable exchangers for you to always know at what exchanger you can exchange one electronic currency for another at the best rate.</div>
 	  	<hr class="my-4">
 	  	<p class="jmbfont">The exchange rates and currency reserves are updated every 5 seconds for all exchangers in the list.</p>
-	  	<a class="btn btn-primary btn-lg" href="https://www.bestchange.com/?p=1112042" role="button">Learn more</a>
+      <a class="btn btn-primary btn-lg button" href="https://www.bestchange.com/?p=1112042" role="button">Learn more</a>
+      <!-- <a href="https://www.bestchange.com/" onclick="this.href='https://www.bestchange.com/?p=1112042'">BestChange.com</a> -->
 		</div>
 	</div>
 
